@@ -60,7 +60,13 @@ void System::enforceBoundaries(Disk & disk) {
         if (disk.y > boxSize) disk.y = boxSize;
     }
 
-// HINT: PROVIDE A DEFINITION FOR A MEMBER FUNCTION OF THE SYSTEM CLASS CALLED uniform
+double System::uniform(double min, double max){
+    double randomValue = this->dist(this->gen); 
+    double width = min + max;
+    double output = (randomValue * width) + min;
+
+    return output;
+}
 
 void System::save(const std::string &filename){
     // save state of disks to file
