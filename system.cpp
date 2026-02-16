@@ -8,7 +8,6 @@
 #include "system.h"
 #include "disk.h"
 
-
 System::System(int N, double displacement,double radius, double boxSize, int seed) {
 
         this->boxSize= boxSize;
@@ -62,7 +61,7 @@ void System::enforceBoundaries(Disk & disk) {
 
 double System::uniform(double min, double max){
     double randomValue = this->dist(this->gen); 
-    double width = min + max;
+    double width = max - min;
     double output = (randomValue * width) + min;
 
     return output;
