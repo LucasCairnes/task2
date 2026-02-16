@@ -1,0 +1,1 @@
+g++ main.cpp system.cpp disk.cpp -o disk_simulation
