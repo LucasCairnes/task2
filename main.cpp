@@ -2,8 +2,6 @@
 #include <string>
 #include "system.h"
 #include "disk.h"
-// HINT: COMPLETE THE INCLUDE STATEMENT
-
 
 /**
  * @brief Entry point of the program.
